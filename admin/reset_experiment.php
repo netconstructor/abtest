@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."abtest_goal_hits WHERE goal_id IN (SELECT id FROM ".$wpdb->prefix."abtest_goals WHERE experiment_id=%d)", $id));
   $wpdb->query($wpdb->prepare("DELETE FROM ".$wpdb->prefix."abtest_variation_views WHERE variation_id IN (SELECT id FROM ".$wpdb->prefix."abtest_variations WHERE experiment_id=%d)", $id));
   
-  redirect_to('?page=abtest&action=reset_experiment&id=' . $var->experiment_id);
+  redirect_to('?page=abtest&action=show_experiment&id=' . $var->experiment_id);
 }
 ?>
 
