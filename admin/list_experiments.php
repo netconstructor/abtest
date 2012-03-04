@@ -26,6 +26,8 @@ $experiments = $wpdb->get_results("SELECT * FROM ".$wpdb->prefix."abtest_experim
   			      |
   			      <a href="?page=abtest&amp;action=edit_experiment&amp;id=<?php echo $experiment->id ?>">Edit</a>
   			      |
+  			      <a href="?page=abtest&amp;action=reset_experiment&amp;id=<?php echo $experiment->id ?>">Reset</a>
+  			      |
   			      <a href="?page=abtest&amp;action=delete_experiment&amp;id=<?php echo $experiment->id ?>">Delete</a>
   			  </td>
   			</tr>

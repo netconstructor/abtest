@@ -30,6 +30,8 @@ $goals = $wpdb->get_results($wpdb->prepare("SELECT * FROM ".$wpdb->prefix."abtes
     This is an overview of your <em><?php echo $exp->name ?></em> experiment.<br />
     <a href="?page=abtest&amp;action=edit_experiment&amp;id=<?php echo $exp->id ?>">Edit experiment</a>
     <small>|</small>
+    <a href="?page=abtest&amp;action=reset_experiment&amp;id=<?php echo $exp->id ?>">Reset experiment</a>
+    <small>|</small>
     <small><a href="?page=abtest&amp;action=delete_experiment&amp;id=<?php echo $exp->id ?>" style="color: #c00;">Delete experiment</a></small>
   </p>
   <?php
