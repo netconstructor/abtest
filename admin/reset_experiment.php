@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       Are you sure you want to reset the experiment <em><?php echo htmlspecialchars($var->name) ?></em>? This can't be undone.
     </p>
     <p>
-      <input class="button-primary" type="submit" name="Save" value="Reset variation" id="submitbutton" />
+      <input class="button-primary" type="submit" name="Save" value="Reset experiment" id="submitbutton" />
       or <a href="?page=abtest&amp;action=show_experiment&amp;id=<?php echo $var->experiment_id ?>">Cancel</a>
     </p>
   </form>
